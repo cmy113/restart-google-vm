@@ -1,6 +1,13 @@
 import googleapiclient.discovery
 import time
-# Remember to set timeout to 540s or at least 120s
+
+# Prerequisite
+# 1. set timeout for cloud functions to 540s or at least 120s
+# 2. Trigger point to be restart_vm
+# 3. Python 3.9
+# 4. Go to your Pub/Sub topic, add principal for Pub/Sub Publisher for service-xxxx@gcp-sa-monitoring-notification.iam.gserviceaccount.com
+
+
 # Define variables
 PROJECT = "xyz"
 ZONE = "us-west1-b"
